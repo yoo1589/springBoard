@@ -34,7 +34,7 @@ public class LoginController {
       }
       //System.out.print("세션들어갈내요"+member);
       session.setAttribute("loginMember", member);
-      return "redirect:/";
+      return "redirect:/getBoardList";
    }
    
   
@@ -78,4 +78,12 @@ public class LoginController {
       session.invalidate();
       return "redirect:/login";
    }
+   
+   @GetMapping("/")
+   public String index(HttpSession session) {
+      session.invalidate();
+      return "index";
+   }   
+   
+   
 }
