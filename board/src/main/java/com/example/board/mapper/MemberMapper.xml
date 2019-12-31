@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.board.mapper.MemberMapper">
+
+   <select id="selectMemberOne" parameterType="com.example.board.vo.LoginForm" resultType="com.example.board.vo.Member">
+      SELECT
+         member_no as memberNo, 
+         member_id as memberId, 
+         member_name as memberName
+      FROM member
+      WHERE member_id = #{memberId}
+      AND member_pw = #{memberPw}
+   </select>
+   
+   <insert id="selectMemberInsert"
+			parameterType="com.example.board.vo.Member">
+		INSERT INTO member(
+         member_id, 
+         member_pw, 
+         member_name 
+		) VALUES (
+			#{memberId},
+			#{memberPw},
+			#{memberName}
+		)
+	</insert>
+	<delete id="selectMemberDelete" parameterType="com.example.board.vo.Member">
+        DELETE FROM member 
+        WHERE member_id = #{memberId}
+        AND member_pw = #{memberPw}
+    </delete>
+
+</mapper>

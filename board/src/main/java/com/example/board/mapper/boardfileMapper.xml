@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.board.mapper.BoardfileMapper">
+	<select id="selectBoardfileOne" parameterType="int" resultType="com.example.board.vo.Boardfile">
+		SELECT
+			filename as filename,
+			extension as extension,
+			origin_name as originName
+		FROM boardfile
+		WHERE board_no = #{boardNo}
+		
+	</select>
+	
+	<update id="modifyBoardfile"
+			parameterType="com.example.board.vo.Boardfile">
+		UPDATE boardfile
+		SET
+			filename = #{filename},
+			extension = #{extension},
+			content_type = #{contentType},
+			size = #{size},
+			origin_name = #{originName}
+		WHERE board_no = #{boardNo}
+	</update>
+	
+	<insert id="insertBoardfile" parameterType="com.example.board.vo.Boardfile">
+		INSERT INTO boardfile(
+			board_no,
+			filename,
+			extension,
+			content_type,
+			size,
+			origin_name
+		) VALUES (
+			#{boardNo},
+			#{filename},
+			#{extension},
+			#{contentType},
+			#{size},
+			#{originName}
+		)
+		
+	</insert>
+	
+	<delete id="deleteBoardfile" parameterType="int">
+        DELETE FROM boardfile
+        WHERE board_no = #{boardNo}
+    </delete>
+</mapper>
