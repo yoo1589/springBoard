@@ -168,7 +168,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                               <i class="fa fa-search-plus fa-3x"></i>
                           </div>
                       </div>
-                      <img src="img/201.png" alt=""  width="400px" height="250px;">
+                      <img src="img/201.jpg" alt=""  width="400px" height="250px;">
                   </a>
               </div>
               
@@ -179,7 +179,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                               <i class="fa fa-search-plus fa-3x"></i>
                           </div>
                       </div>
-                      <img src="img/202.png" alt="" width="400px" height="250px;">
+                      <img src="img/202.jpg" alt="" width="400px" height="250px;">
                   </a>
               </div>
               
@@ -369,7 +369,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                               </div>
                               <div class="row">
                                 <div class="col-md-6">
-                                  <img class="img-fluid img-centered" src="img/201.png" alt="">
+                                  <img class="img-fluid img-centered" src="img/201.jpg" alt="">
                                 </div>
                                 <div class="col-md-6">
                                 	<p>Java Spring 프레임워크를 사용한 건설상업용 웹페이지 입니다. 데이터베이스 연동으로 어드민이 직접 각종데이터(연혁, 공사이미지게시글, 공사실적, 1:1문의 등,,)를 입출력 할수있는 기능성 웹페이지 입니다. 개인 프로젝트로 아버지의 명으로 만들게되었습니다.</p>
@@ -463,7 +463,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                             </div>
                             <div class="row">
                               <div class="col-md-6">
-                                <img class="img-fluid img-centered" src="img/202.PNG" alt="">
+                                <img class="img-fluid img-centered" src="img/202.jpg" alt="">
                               </div>
                               <div class="col-md-6">
                                 <p>직업훈련 Final 팀프로젝트로 pc방예약 음식주문 사이트입니다. 고객,가맹점,관리자 부분으로 나눠서 프로젝트를 진행하였으며 관리자페이지를 맡아서 진행하였으며 가맹점페이지에대한 부분을 팀원과 더좋은 효율을위해 짝코딩을 진행하였습니다. 좋은 팀원들과 프로젝트를 시작해 요구사항인 좌석예약과 좌석설정 음식주문 가맹점 신청 QnA, FAQ 등등,, 많은 서비스를 담은 웹페이지 소프트웨어입니다.</p>
@@ -505,7 +505,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                             </div>
                             <div class="row">
                               <div class="col-md-6">
-                                <img class="img-fluid img-centered" src="img/201.png" alt="">
+                                <img class="img-fluid img-centered" src="img/201.jpg" alt="">
                               </div>
                               <div class="col-md-6">
                                 <p><p>Java Spring 프레임워크를 사용한 건설상업용 웹페이지 입니다. 데이터베이스 연동으로 어드민이 직접 각종데이터(연혁, 공사이미지게시글, 공사실적, 1:1문의 등,,)를 입출력 할수있는 기능성 웹페이지 입니다. 개인 프로젝트로 아버지의 명으로 만들게되었습니다.</p></p>
@@ -547,7 +547,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                             </div>
                             <div class="row">
                               <div class="col-md-6">
-                                <img class="img-fluid img-centered" src="img/202.png" alt="">
+                                <img class="img-fluid img-centered" src="img/202.jpg" alt="">
                               </div>
                               <div class="col-md-6">
                                 <p>직업훈련 Final 팀프로젝트로 pc방예약 음식주문 사이트입니다. 고객,가맹점,관리자 부분으로 나눠서 프로젝트를 진행하였으며 관리자페이지를 맡아서 진행하였으며 가맹점페이지에대한 부분을 팀원과 더좋은 효율을위해 짝코딩을 진행하였습니다. 좋은 팀원들과 프로젝트를 시작해 요구사항인 좌석예약과 좌석설정 음식주문 가맹점 신청 QnA, FAQ, 통계확인 등,, 많은 서비스를 담은 웹페이지 소프트웨어입니다.</p>
