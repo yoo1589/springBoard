@@ -142,6 +142,7 @@
 </head>
 <body>
   <div class="container">
+  <a href="/">메인프로필화면</a>
     <div class="row">
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card card-signin my-5">
@@ -150,12 +151,12 @@
             
             <form class="form-signin" method="post" action="/login">
               <div class="form-label-group">
-                <input type="text" id="memberId" class="form-control" name="memberId" required autofocus>
+                <input type="text" id="memberId" class="form-control" name="memberId" required>
                 <label for="inputEmail">Id</label>
               </div>
 
               <div class="form-label-group">
-                <input type="password" id="memberPw" class="form-control" name="memberPw" placeholder="Password" required>
+                <input type="text" id="memberPw" class="form-control" name="memberPw" required>
                 <label for="inputPassword">pw</label>
               </div>
 
@@ -163,6 +164,7 @@
                 <input type="checkbox" class="custom-control-input" id="customCheck1">
                 <label class="custom-control-label" for="customCheck1">Remember password</label>
               </div>
+              
               	<button type="submit">로그인</button>
               	<a href="/join">회원가입</a>
             </form>

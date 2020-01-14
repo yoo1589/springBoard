@@ -19,6 +19,7 @@ public class LoginController {
    @GetMapping("/login")
    public String login(HttpSession session) {
       Member member = (Member)session.getAttribute("loginMember");
+      System.out.println(member);
       if(member != null) {
          System.out.println("로그인 상태");
          return"redirect:/";
@@ -28,11 +29,10 @@ public class LoginController {
    @PostMapping("/login")
    public String login(HttpSession session, LoginForm loginForm) {
       Member member = memberService.getMemberOne(loginForm);
-      
       if(member == null) {
          return "redirect:login";
       }
-      //System.out.print("세션들어갈내요"+member);
+      System.out.print("세션들어갈내요"+member);
       session.setAttribute("loginMember", member);
       return "redirect:/getBoardList";
    }

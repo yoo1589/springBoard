@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.example.board.service.BoardService;
 import com.example.board.vo.Board;
 import com.example.board.vo.BoardForm;
+import com.example.board.vo.Feedback;
 
 @Controller
 public class BoardController {
@@ -59,7 +60,11 @@ public class BoardController {
 	        return "redirect:/getBoardList";
 	    }
 	
-	
+		@PostMapping("/addFeedback")
+	    public String addFeedback(Feedback feedback) {	
+	        boardService.addFeedback(feedback);       
+	        return "redirect:/";
+		}	
 			
 	
 	// Get, Post 동시에 처리하기 위해서 -> @RequestMapping 에노테이션 사용

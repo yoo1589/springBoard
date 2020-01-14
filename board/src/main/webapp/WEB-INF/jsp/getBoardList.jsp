@@ -29,7 +29,8 @@ uri="http://java.sun.com/jsp/jstl/core"%>
 	<a href="/logout">로그아웃</a>
 	<br>
 	<a href="/deleteMember">회원탈퇴</a>
-
+	<br>
+	<a href="/">메인프로필화면</a>
 		<h1>BOARD LIST(spring mvc 방식)</h1>
 		<div>전체행의 수 : ${map.totalRowCount}</div>
 		

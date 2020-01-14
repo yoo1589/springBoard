@@ -10,7 +10,6 @@ import com.example.board.vo.Member;
 public interface MemberMapper {
 	Member selectMemberOne(LoginForm loginForm);
 	//인터페이스는 생략가능 public abstract
-	
 	public int selectMemberInsert(Member member);
 
 	public int selectMemberDelete(Member member);

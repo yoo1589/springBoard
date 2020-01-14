@@ -150,18 +150,18 @@
             
             <form class="form-signin" method="post" action="/join">
               <div class="form-label-group">
-                <input type="text" id="memberId" class="form-control" name="memberId" required autofocus>
+                <input type="text" id="memberId" class="form-control" name="memberId" required>
                 <label for="#">Id</label>
               </div>
 
               <div class="form-label-group">
-                <input type="password" id="memberPw" class="form-control" name="memberPw" placeholder="Password" required>
+                <input type="text" id="memberPw" class="form-control" name="memberPw" required>
                 <label for="inputPassword">pw</label>
               </div>
 
 
               <div class="form-label-group">
-                <input type="text" id="memberName" class="form-control" name="memberName" placeholder="memberName" required>
+                <input type="text" id="memberName" class="form-control" name="memberName">
                 <label for="inputPassword">name</label>
               </div>
               

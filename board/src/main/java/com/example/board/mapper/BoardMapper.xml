@@ -5,6 +5,23 @@
 
 <mapper namespace="com.example.board.mapper.BoardMapper">
 
+	<!-- 가맹점 pc사양 입력 -->
+	<insert id="insertFeedback" parameterType="com.example.board.vo.Feedback">
+	   INSERT INTO feedback(
+	   	  name,
+	      email,
+	      title,
+	      content
+	   ) VALUES (
+	   	  #{name},
+	      #{email},
+	      #{title},
+	      #{content}
+	   )
+	   
+
+	</insert>
+
 	<update id="modifyBoard"
 			parameterType="com.example.board.vo.BoardModify">
 

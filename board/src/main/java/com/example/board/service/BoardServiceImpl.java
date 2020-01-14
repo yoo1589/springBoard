@@ -18,6 +18,7 @@ import com.example.board.vo.Board;
 import com.example.board.vo.BoardForm;
 import com.example.board.vo.BoardModify;
 import com.example.board.vo.Boardfile;
+import com.example.board.vo.Feedback;
 import com.example.board.vo.Page;
 
 @Service
@@ -26,8 +27,13 @@ public class BoardServiceImpl implements BoardService{
 	@Autowired private BoardMapper boardMapper;
 	@Autowired private BoardfileMapper boardfileMapper;
 	@Autowired private CommentMapper commentMapper;
-	@Override
 	
+	@Override
+	public int addFeedback(Feedback feedback) {		
+		return boardMapper.insertFeedback(feedback);
+	}	
+	
+	@Override
 	public void modifyBoard(BoardForm boardForm) {
 		
 		BoardModify boardModify = new BoardModify();
@@ -69,7 +75,7 @@ public class BoardServiceImpl implements BoardService{
 		//							^랜덤 아이디를 구해주세요		^-를뺴주세요			    ^확장자를 붙여주세요
 		
 		try {
-			mf.transferTo(new File("E:\\Spring\\git\\board\\src\\main\\webapp\\upload\\"+saveFilename));
+			mf.transferTo(new File("../../upload"+saveFilename));
 			//파일을 받아서 옮겨주세요
 		}catch (Exception e) {
 			
@@ -133,7 +139,7 @@ public class BoardServiceImpl implements BoardService{
 		//							^랜덤 아이디를 구해주세요		^-를뺴주세요			    ^확장자를 붙여주세요
 		
 		try {
-			mf.transferTo(new File("E:\\Spring\\git\\board\\src\\main\\webapp\\upload\\"+saveFilename));
+			mf.transferTo(new File("../../upload"+saveFilename));
 			//파일을 받아서 옮겨주세요
 		}catch (Exception e) {
 			
@@ -169,9 +175,11 @@ public class BoardServiceImpl implements BoardService{
 		page.setBeginRow((currentPage-1)*rowPerPage);
 		page.setSearchWord(searchWord);
 		List<Board> list = boardMapper.selectBoardList(page);
-		
+		System.out.println("innin"+currentPage);
 		int totalRowCount = boardMapper.selectBoardCount(searchWord);
 		int lastPage = totalRowCount / rowPerPage;
+		System.out.println("innin2"+lastPage);
+		
 		if(totalRowCount % lastPage !=0) {
 			lastPage += 1;
 		}

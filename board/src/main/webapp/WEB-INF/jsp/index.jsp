@@ -15,7 +15,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     <meta name="author" content="">
 	<link rel="stylesheet" href="assets/css/main.css" />
     <link rel="shortcut icon" href="img/favicon.ico">
-    <title>Profile Bootstrap Themd</title>
+    <title>Yoo Jae Hun Profile</title>
 
     <!-- Global stylesheets -->
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -190,7 +190,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                               <i class="fa fa-search-plus fa-3x"></i>
                           </div>
                       </div>
-                      <img src="img/portfolio/p-9.jpg" alt="" width="400px" height="250px;">
+                      <img src="img/puzzleGame.jpg" alt="" width="400px" height="250px;">
                   </a>
               </div>      
                       
@@ -212,7 +212,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                               <i class="fa fa-search-plus fa-3x"></i>
                           </div>
                       </div>
-                      <img src="img/portfolio/101.png" alt=""  width="400px" height="250px;">
+                      <img src="img/board.jpg" alt=""  width="400px" height="250px;">
                   </a>
               </div>
               
@@ -223,7 +223,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                               <i class="fa fa-search-plus fa-3x"></i>
                           </div>
                       </div>
-                      <img src="img/portfolio/p-3.jpg" alt=""  width="400px" height="250px;">
+                      <img src="img/board.jpg" alt=""  width="400px" height="250px;">
                   </a>
               </div> 
           </div>
@@ -305,23 +305,29 @@ License URL: https://creativecommons.org/licenses/by/4.0/
           <div class="row my-auto" id="contact"> 
             <div class="col-md-8">
               <div class="contact-cont">
-                <h3>CONTACT Us</h3>
+                <h3>Feedback</h3>
                 <div class="heading-border-light"></div>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
-              </div>   
+                <p></p>
+                </div>   
+                
+             <form action="/addFeedback" class="was-validated" method="post" > 
               <div class="row con-form">
                 <div class="col-md-12">
-                  <input type="text" name="full-name" placeholder="Full Name" class="form-control">
+                  <input type="text" name="name" placeholder="Name" class="form-control">
                 </div>
                 <div class="col-md-12">
                   <input type="text" name="email" placeholder="Email Id" class="form-control">
                 </div>
                 <div class="col-md-12">
-                  <input type="text" name="subject" placeholder="Subject" class="form-control">
+                  <input type="text" name="title" placeholder="Title" class="form-control">
                 </div>
-                <div class="col-md-12"><textarea name="" id=""></textarea></div>
-                <div class="col-md-12 sub-but"><button class="btn btn-general btn-white" role="button">Send</button></div>
+                <div class="col-md-12"><textarea name="content" id="content"></textarea></div>
+                <div class="col-md-12 sub-but">
+                <button class="btn btn-general btn-white" role="button" type="submit">Send</button>
+                </div>
               </div>
+             </form>    
+              
             </div>
             <div class="col-md-4 col-sm-12 mt-5"> 
               <div class="contact-cont2"> 
@@ -358,6 +364,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                       <div class="rl"></div>
                   </div>
               </div>
+              
               <div class="container">
                   <div class="row">
                           <div class="modal-body">
@@ -372,7 +379,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                                   <img class="img-fluid img-centered" src="img/201.jpg" alt="">
                                 </div>
                                 <div class="col-md-6">
-                                	<p>Java Spring 프레임워크를 사용한 건설상업용 웹페이지 입니다. 데이터베이스 연동으로 어드민이 직접 각종데이터(연혁, 공사이미지게시글, 공사실적, 1:1문의 등,,)를 입출력 할수있는 기능성 웹페이지 입니다. 개인 프로젝트로 아버지의 명으로 만들게되었습니다.</p>
+                                	<p>[woosin] Java Spring 프레임워크를 사용한 건설상업용 웹페이지 입니다. 데이터베이스 연동으로 어드민이 직접 각종데이터(연혁, 공사이미지게시글, 공사실적, 1:1문의 등,,)를 입출력 할수있는 기능성 웹페이지 입니다. 개인 프로젝트로 아버지의 명으로 만들게되었습니다.</p>
                                   <ul class="list-inline item-details">
                                       <li>Client:
                                           <strong>
@@ -401,6 +408,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
           </div>
       </div>
     </div>
+    
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -420,10 +428,10 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                             </div>
                             <div class="row">
                               <div class="col-md-6">
-                                <img class="img-fluid img-centered" src="img/portfolio/101.png" alt="">
+                                <img class="img-fluid img-centered" src="img/board.jpg" alt="">
                               </div>
                               <div class="col-md-6">
-                                <p>Spring framework를 이용하여 만든 공용 게시판 입니다. 피드백을 받기위하여 만든 게시판으로서 회원가입후 로그인을 하게되면 데이터베이스에 저장되어있는 게시판리스트와 게시글에 담긴 댓글들을 확인할수있습니다. 기능으로는 게시글 입력,삭제,수정 이가능하며 게시글 입력시 파일 첨부도 가능하게 설계가되었습니다. 또한 댓글 수정,삭제 기능도 가능하며 페이징기능이 추가되었습니다 마지막으로 회원수정과 삭제가 가능합니다.</p>
+                                <p>[서버접속 오류 해결중]Spring framework를 이용하여 만든 공용 게시판 입니다. 피드백을 받기위하여 만든 게시판으로서 회원가입후 로그인을 하게되면 데이터베이스에 저장되어있는 게시판리스트와 게시글에 담긴 댓글들을 확인할수있습니다. 기능으로는 게시글 입력,삭제,수정 이가능하며 게시글 입력시 파일 첨부도 가능하게 설계가되었습니다. 또한 댓글 수정,삭제 기능도 가능하며 페이징기능이 추가되었습니다 마지막으로 회원수정과 삭제가 가능합니다.</p>
                                 <ul class="list-inline item-details">
                                     
                                     <li>Service:
@@ -457,20 +465,20 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                         <div class="modal-body">
                             <div class="title-bar">
                               <div class="col-md-12">
-                                <h2 class="text-center">Nor Project</h2>
+                                <h2 class="text-center">SpringBoard</h2>
                                 <div class="heading-border"></div>
                               </div>
                             </div>
                             <div class="row">
                               <div class="col-md-6">
-                                <img class="img-fluid img-centered" src="img/202.jpg" alt="">
+                                <img class="img-fluid img-centered" src="img/board.jpg" alt="">
                               </div>
                               <div class="col-md-6">
-                                <p>직업훈련 Final 팀프로젝트로 pc방예약 음식주문 사이트입니다. 고객,가맹점,관리자 부분으로 나눠서 프로젝트를 진행하였으며 관리자페이지를 맡아서 진행하였으며 가맹점페이지에대한 부분을 팀원과 더좋은 효율을위해 짝코딩을 진행하였습니다. 좋은 팀원들과 프로젝트를 시작해 요구사항인 좌석예약과 좌석설정 음식주문 가맹점 신청 QnA, FAQ 등등,, 많은 서비스를 담은 웹페이지 소프트웨어입니다.</p>
+                                <p>[서버접속 오류 해결중]Spring framework를 이용하여 만든 공용 게시판 입니다. 피드백을 받기위하여 만든 게시판으로서 회원가입후 로그인을 하게되면 데이터베이스에 저장되어있는 게시판리스트와 게시글에 담긴 댓글들을 확인할수있습니다. 기능으로는 게시글 입력,삭제,수정 이가능하며 게시글 입력시 파일 첨부도 가능하게 설계가되었습니다. 또한 댓글 수정,삭제 기능도 가능하며 페이징기능이 추가되었습니다 마지막으로 회원수정과 삭제가 가능합니다.</p>
                                 <ul class="list-inline item-details">
                                     <li>Service:
                                         <strong>
-                                          <a href="http://ahp7242.cafe24.com/nor/franchiseeIndex">Web Development</a>
+                                          <a href="/login">Start</a>
                                         </strong>
                                     </li>
                                 </ul>
@@ -590,24 +598,16 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                             </div>
                             <div class="row">
                               <div class="col-md-6">
-                                <img class="img-fluid img-centered" src="img/portfolio/p-9.jpg" alt="">
+                                <img class="img-fluid img-centered" src="img/puzzleGame.jpg" alt="">
                               </div>
                               <div class="col-md-6">
-                                <p>Our new Project every processes had become fragmented; meaning quality and service were inconsistent. This lack of standardization was adversely impacting operating costs, productivity and customer satisfaction. For several years now Payfast has worked strategically with innovations as a means of developing new solutions, products and services. In line with this vision, Success was approached to find new payments solutions to offer Payfast customers on their website, including open invoice and partial payments options.</p>
+                                <p>[PUZZLE] 스프링 프레임워크를 사용하여만든 같은그림찾기 퍼즐게임입니다. 각각의 라운드마다 난이도가다르며 게임을클리어시 랭크가기록되며 메인인덱스에서 랭킹리스트가 확인이가능합니다 게임의 재미를 더하기위해 장애물인 폭탄을 심어놨습니다.</p>
+                                
                                 <ul class="list-inline item-details">
-                                    <li>Client:
-                                        <strong>
-                                          <a href="#">Techs Soft</a>
-                                        </strong>
-                                    </li>
-                                    <li>Date:
-                                        <strong>
-                                          <a href="#">April 2018</a>
-                                        </strong>
-                                    </li>
+                                    
                                     <li>Service:
                                         <strong>
-                                          <a href="#">Web Development</a>
+                                          <a href="http://dbwognsdi.cafe24.com/puzzle/index.html">puzzle Game</a>
                                         </strong>
                                     </li>
                                 </ul>
